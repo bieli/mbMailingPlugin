@@ -1,0 +1,15 @@
+all:
+  mbmailing_plugin:
+#    enabled:                    true
+    emulation_mode:             false
+    transport_method:           smtp
+    parameters:
+      server:                   localhost
+      user:                     mailings.tester@gmail.com
+      pass:                     mdoij23978y0jhroiej
+      port:                     432
+      auth:                     tls # plain
+    sender_name:                "Mailings Tester"
+    sender_email:               mailings.tester@gmail.com
+    proccess_data_paging:       100
+
