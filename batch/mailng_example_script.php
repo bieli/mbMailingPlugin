@@ -14,17 +14,17 @@ $_dataIteratorObj = new ExampleMailingDataIterator();
 $_dataIteratorObj->setPropertiesFlags($_propertyObj);
 
 //TODO: add setLogger method and setVerboseMode
-$_mailerManager = new mbIMailerManager();
+$_mailerManagerObj = new mbMailerManager();
 
-$_mailerManager->setVerboseMode(true);
-$_mailerManager->setMailingDataIteratorObject($_dataIteratorObj);
+$_mailerManagerObj->setVerboseMode(true);
+$_mailerManagerObj->setMailingDataIteratorObject($_dataIteratorObj);
 
 //TODO: checks all conditions/credentials for send mailing proccess 
 //      and initialize all instances/connections/loggers
-$_mailerManager->init();
+$_mailerManagerObj->init();
 
 //TODO: general start send mailing proccess method
-$_mailerManager->run();
+$_mailerManagerObj->run();
 
-$_mailerManager->deInit();
+$_mailerManagerObj->deInit();
 
